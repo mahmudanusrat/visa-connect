@@ -7,7 +7,7 @@ import LatestVisas from "./LatestVisas";
 
 const Home = () => {
   return (
-    <div className="max-w-screen-xl mx-auto p-5 md:p-10 lg:p-0">
+    <div className="max-w-screen-xl mx-auto p-2 md:p-5 lg:p-0">
       <Banner></Banner>
       <LatestVisas></LatestVisas>
       <AboutUs></AboutUs>

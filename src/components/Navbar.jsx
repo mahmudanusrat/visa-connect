@@ -88,11 +88,11 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="max-w-screen-xl mx-auto md:p-10 lg:p-0 border-b-2">
-      <div className="navbar flex items-center justify-between px-1 py-3">
-        <div className="navbar-start flex items-center gap-2">
+    <nav className="max-w-screen-xl mx-auto p-0 md:p-5 lg:p-0 border-b-2">
+      <div className="navbar flex items-center justify-between ">
+        <div className="navbar-start flex items-center">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost p-0 lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -116,8 +116,8 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <img src={logo} alt="visa navigate logo" className="w-14" />
-          <h1 className="text-xl md:text-3xl font-normal text-[#F14836]">
+          <img src={logo} alt="visa connect logo" className="w-10 md:w-14 hidden md:block" />
+          <h1 className="text-sm md:text-3xl font-normal text-[#F14836]">
             Visa Connect
           </h1>
         </div>
@@ -129,18 +129,18 @@ const Navbar = () => {
         <div className="navbar-end gap-5">
         
           {!user ? (
-            <>
+            <div className="flex md:flex-row gap-1 md:gap-2">
               <NavLink to="/login">
-                <button className="btn btn-md bg-[#F14836] text-white hover:bg-[#bb7169] hover:border-[#F14836]">
+                <button className="btn btn-sm md:btn-md bg-[#F14836] text-white hover:bg-[#bb7169] hover:border-[#F14836]">
                   Login
                 </button>
               </NavLink>
               <NavLink to="/register">
-                <button className="btn btn-md bg-[#F14836] text-white hover:bg-[#bb7169] hover:border-[#F14836]">
+                <button className="btn  btn-sm md:btn-md bg-[#F14836] text-white hover:bg-[#bb7169] hover:border-[#F14836]">
                   Register
                 </button>
               </NavLink>
-            </>
+            </div>
           ) : (
             <>
               <div className="relative group">

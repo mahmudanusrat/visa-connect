@@ -8,7 +8,7 @@ const MainLayout = () => {
   const { loading } = useContext(AuthContext);
   
   return (
-    <div className="font-poppins max-w-screen-xl mx-auto p-5 md:p-10 lg:p-0">
+    <div className="font-poppins max-w-screen-xl mx-auto p-3 md:p-5 lg:p-0">
       <Navbar></Navbar>
       {loading ? (
         <div className="flex items-center justify-center h-screen">
