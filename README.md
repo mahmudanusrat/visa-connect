@@ -29,3 +29,17 @@ Visa Connect Portal simplifies the visa application process, allowing users to c
 - Firebase Authentication
 - MongoDB & Mongoose
 - Node.js & Express.js
+
+  ## Dependencies
+- react
+- react-router-dom
+- react-hook-form
+- tailwindcss
+- firebase
+- react-toastify
+
+## Run the Project Locally
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/mahmudanusrat/visa-connect.git
